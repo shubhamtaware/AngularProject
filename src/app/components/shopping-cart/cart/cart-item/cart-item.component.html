@@ -1,0 +1,6 @@
+<div class="cart-item">
+  <span>{{ cartItem.productName }}</span>
+  <span><strong>: {{ cartItem.price | currency:'INR'}}</strong></span> x
+  <span><strong>{{ cartItem.qty }}</strong></span>:
+  <strong>{{ (cartItem.qty * cartItem.price) | currency:'INR' }}</strong>
+</div>
