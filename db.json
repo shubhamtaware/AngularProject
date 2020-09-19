@@ -1,0 +1,85 @@
+
+{
+  "api":{
+    "target":"http://localhost:1234",
+    "secure": false,
+    "changeOrigin": true
+  },
+
+
+  "products":[
+    {
+      "id":1,
+      "name":"Britannia GoodDay Cashew: 600gms",
+      "description":"Bri GoodDay Cashew: 600gms",
+      "imageUrl":"https://img.dmart.in/images/rwd/products/K/C/o/KCookies600gmBTN1033XX160117_1_P.jpg",
+      "price":120
+    },
+    {
+      "id":2,
+      "name":"Parle Hide and Seek: 100gms",
+      "description":"Parle Hide and Seek: 100gms",
+      "imageUrl": "https://img.dmart.in/images/rwd/products/I/C/r/ICreamBiscuits125gPRLE2047XX290216_1_P.jpg",
+      "price":30
+    },
+    {
+      "id":3,
+      "name":"Karachi Cookies: 400gms",
+      "description":"Karachi Cookies: 400gms",
+      "imageUrl":"https://img.dmart.in/images/rwd/products/I/C/o/ICookies400gKMST1232XX290216_1_P.jpg",
+      "price":150
+    },
+    {
+      "id":4,
+      "name":"Parle-G: 800gms",
+      "description":"Parle-G: 800gms",
+      "imageUrl":"https://img.dmart.in/images/rwd/products/I/B/i/IBiscuitGluco125gPRLE2081XX290216_2_P.jpg",
+      "price":70
+    },
+    {
+      "id":5,
+      "name":"Britannia Little Hearts: 75gms",
+      "description":"Britannia Little Hearts: 75gms",
+      "imageUrl":"https://img.dmart.in/images/rwd/products/K/C/O/KCOOKIES75gmBRTN23XX121218_5_P.jpg",
+      "price":20
+    },
+    {
+      "id":6,
+      "name":"ITC Mom's Magic: 600gms",
+      "description":"ITC Mom's Magic: 600gms",
+      "imageUrl":"https://img.dmart.in/images/rwd/products/K/C/O/KCOOKIES600gmSNFT30XX121218_3_P.jpg",
+      "price":105
+    }
+  ],
+
+  
+  "bakery":[
+    {
+      "id":1,
+      "name":"Britannia GoodDay Cashew: 600gms",
+      "description":"Bri GoodDay Cashew: 600gms",
+      "imageUrl":"https://img.dmart.in/images/rwd/products/K/C/o/KCookies600gmBTN1033XX160117_1_P.jpg",
+      "price":120
+    }
+  ],
+  "cart":[],
+  
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
