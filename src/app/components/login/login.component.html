@@ -20,23 +20,24 @@
   </head>
 
   <body class="text-center">
-      <div class="card-body">
+    <div class="card-body">
     <form class="form-signin">
-      <img class="mb-4" src="https://scontent.fpnq8-1.fna.fbcdn.net/v/t1.0-9/97112065_100481181687262_4802437868368691200_o.jpg?_nc_cat=104&_nc_sid=6e5ad9&_nc_ohc=NBpEiOWMy-QAX9AIXbX&_nc_ht=scontent.fpnq8-1.fna&oh=1bcb2dd00d6512c34a85fd2f27e65a94&oe=5F84C98F" 
-      alt="" width="400" height="250">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only" >Email address</label>
-      <input type="username" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; PG-DAC AWP Project</p>
+        <img class="mb-4" src="https://scontent.fpnq8-1.fna.fbcdn.net/v/t1.0-9/97112065_100481181687262_4802437868368691200_o.jpg?_nc_cat=104&_nc_sid=6e5ad9&_nc_ohc=NBpEiOWMy-QAX9AIXbX&_nc_ht=scontent.fpnq8-1.fna&oh=1bcb2dd00d6512c34a85fd2f27e65a94&oe=5F84C98F" 
+          alt="" width="400" height="250">
+          
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="inputEmail" class="sr-only" >Email address</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" [routerLink]="['/shop']">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">&copy; PG-DAC AWP Project</p>
     </form>
-</div>
+    </div>
   </body>
 </html>

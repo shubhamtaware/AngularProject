@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,7 +25,7 @@ import { SauceComponent } from './components/sauce/sauce.component';
 import { SoupComponent } from './components/soup/soup.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { RegDataService } from './reg-data.service';
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import { LoginComponent } from './components/login/login.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule, 
     HttpClientModule,
     AppRoutingModule
     /*RouterModule.forRoot([
@@ -58,7 +62,7 @@ import { LoginComponent } from './components/login/login.component';
   ])*/
 
   ],
-  providers: [],
+  providers: [RegDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

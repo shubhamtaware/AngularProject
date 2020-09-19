@@ -10,10 +10,10 @@
 <body >
 	
     <div>
-        <br><h1 align="center">Sign Up Form</h1><br>            
+        <br><h1 class="alert alert-primary">Sign Up Form</h1><br>            
     </div>
     <div>
-        <form>
+        <form [formGroup]="form" (ngSubmit)="register()">
             <table style="background-color: #999999;">
                 <tr>
                     <td>
@@ -21,8 +21,8 @@
                     </td>
                     <td>
                         <div class="form-group">
-                            <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" placeholder="Name...">
+                            <label></label>
+                            <input type="text" class="form-control" formControlName="user_fullname" id="ufullname" placeholder="Name...">
                           </div>
                     </td>
                 </tr>
@@ -32,8 +32,8 @@
                     </td>
                     <td>
                         <div class="form-group">
-                            <label for=""></label>
-                            <input type="email" class="form-control" name="" id="" placeholder="Email...">
+                            <label></label>
+                            <input type="email" class="form-control" id="uemail" formControlName="user_email" placeholder="Email...">
                           </div>
                     </td>
                 </tr>
@@ -43,8 +43,8 @@
                     </td>
                     <td>
                         <div class="form-group">
-                            <label for=""></label>
-                            <input type="tel" class="form-control" name="" id="" placeholder="Contact Number...">
+                            <label></label>
+                            <input type="tel" class="form-control" id="uphone" formControlName="user_phone" placeholder="Contact Number...">
                           </div>
                     </td>
                 </tr>
@@ -54,8 +54,8 @@
                     </td>
                     <td>
                         <div class="form-group">
-                            <label for=""></label>
-                            <input type="password" class="form-control" name="" id="" placeholder="UserName...">
+                            <label></label>
+                            <input type="text" class="form-control" id="uname" formControlName="user_name" placeholder="UserName...">
                           </div>
                     </td>
                 </tr>
@@ -65,19 +65,20 @@
                     </td>
                     <td>
                         <div class="form-group">
-                            <label for=""></label>
-                            <input type="password" class="form-control" name="" id="" placeholder="Password...">
+                            <label></label>
+                            <input type="password" class="form-control" id="upass" formControlName="user_pass" placeholder="Password...">
                           </div>
                     </td>
                 </tr>
             </table>
             <table>
-                <tr bgcolor="white">
+                <tr style="background-color:white" >
                     <td>
-                        <center><input type="button" class="btn btn-lg btn-primary" value="Sign Up" onclick="addToCart()"></center>
+                        <input type="submit" class="btn btn-lg btn-primary align:center" value="Sign Up" >
+                        
                     </td>
                     <td>
-                        <center><input type="reset" class="btn btn-lg btn-danger" value="Reset" onclick="reset"></center>
+                        <input type="reset" class="btn btn-lg btn-danger align:center" value="Reset" onclick="reset">
                     </td>
                 </tr>
             </table>
